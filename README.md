@@ -5,6 +5,9 @@ ResQRoute is an intelligent, web-based disaster response system designed to assi
 
 The system aims to demonstrate how modern technologies such as Artificial Intelligence, real-time data processing, and intuitive user interfaces can be leveraged to improve disaster response efficiency and public safety.
 
+**Demo Link:**  
+https://resqroute-wizf.onrender.com 
+
 ## **Objectives**
 - To design a responsive and user-friendly disaster response interface  
 - To simulate AI-based risk analysis for different disaster scenarios  
@@ -98,10 +101,7 @@ The UI is designed with a modern, futuristic theme inspired by:
 
 ## **Deployment**
 - Render (Cloud Platform) → Hosting backend and frontend  
-- GitHub → Version control and project management  
-
-**MVP / Prototype Link:**  
-https://resqroute-wizf.onrender.com  
+- GitHub → Version control and project management   
 
 ## **Limitations**
 - Does not use real-time disaster data  
