@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>ResQRoute</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<div class="hero">
+
+  <!-- HEADER -->
+  <header class="topbar">
+    <div class="logo">
+      <div class="logo-icon">🛰</div>
+      <div>
+        <h1>RESQROUTE</h1>
+        <p>AI DISASTER RESPONSE SYSTEM</p>
+        <p class="sub">India Integrated · Real-Time · Multilingual</p>
+      </div>
+    </div>
+
+    <div class="status">
+      <span>MISSION STATUS</span>
+      <h2>● STANDBY</h2>
+      <div class="bar"></div>
+    </div>
+
+    <div class="metrics">
+      <p>CPU <span>23%</span></p>
+      <p>NET <span>41%</span></p>
+      <p>SAT <span>68%</span></p>
+    </div>
+  </header>
+
+  <!-- HERO TEXT -->
+  <section class="headline">
+    <div class="tags">
+      <span class="tag green">INDIA'S FIRST AI DISASTER RESPONSE SYSTEM</span>
+      <span class="tag blue">GEMINI AI POWERED</span>
+    </div>
+
+    <h2>
+      <small>EVERY</small><br>
+      <strong>SECOND</strong><br>
+      <span>SAVES</span> A LIFE
+    </h2>
+
+    <p>
+      Enter location and disaster type. ResQRoute generates AI-powered evacuation routes,
+      real-time risk assessment, and multilingual emergency alerts in under 2 seconds.
+    </p>
+  </section>
+
+  <!-- STATS BAR -->
+  <div class="stats">
+    <div>🛰 Satellites Active: <strong>24 / 31</strong></div>
+    <div>⚡ Response Time: <strong>&lt; 1.8s</strong></div>
+    <div>🌍 Coverage: <strong>All India</strong></div>
+    <div>📡 Data Feeds: <strong>IMD · INCOIS · NDMA</strong></div>
+  </div>
+
+  <!-- PANEL -->
+  <div class="panel">
+    <div class="panel-header">
+      ● DISASTER ANALYSIS COMMAND CENTER
+    </div>
+
+    <div class="form">
+      <div class="field">
+        <label>01 DISASTER CLASSIFICATION</label>
+        <select id="disaster">
+          <option value="">Select Disaster Type</option>
+          <option>Flood</option>
+          <option>Cyclone</option>
+          <option>Earthquake</option>
+          <option>Tsunami</option>
+          <option>Landslide</option>
+        </select>
+      </div>
+
+      <div class="field">
+        <label>02 TARGET LOCATION COORDINATES</label>
+        <input id="location" type="text" placeholder="e.g. Puri, Odisha / Bhubaneswar">
+      </div>
+    </div>
+
+    <button class="cta" id="btn" onclick="analyze()">
+      <span class="btn-text">GENERATE RESPONSE PLAN</span>
+    </button>
+
+    <p class="note">
+      ⚠ For emergency preparedness & simulation use. Always follow official NDMA and IMD advisories in a real disaster.
+    </p>
+  </div>
+
+  <!-- LOADING + RESULT -->
+  <div id="loading" class="hidden">
+    <p id="loading-sub">Initializing...</p>
+  </div>
+
+  <div id="result" class="hidden">
+    <div id="risk-icon"></div>
+    <div id="risk-level"></div>
+    <div id="risk-summary"></div>
+    <div id="risk-bar"></div>
+    <ul id="evacuation"></ul>
+    <ul id="resources"></ul>
+    <div id="alert-en"></div>
+    <div id="alert-hi"></div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>Secure · Reliable · Always On</p>
+    <p>ResQRoute is committed to building a safer, smarter, more resilient India.</p>
+  </footer>
+
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
