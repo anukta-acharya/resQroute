@@ -97,20 +97,45 @@
     </p>
   </div>
 
-  <!-- LOADING + RESULT -->
+  <!-- LOADING -->
   <div id="loading" class="hidden">
     <p id="loading-sub">Initializing...</p>
   </div>
 
-  <div id="result" class="hidden">
-    <div id="risk-icon"></div>
-    <div id="risk-level"></div>
-    <div id="risk-summary"></div>
-    <div id="risk-bar"></div>
-    <ul id="evacuation"></ul>
-    <ul id="resources"></ul>
-    <div id="alert-en"></div>
-    <div id="alert-hi"></div>
+  <!-- RESULT (UPDATED UI) -->
+  <div id="result" class="result-box hidden">
+
+    <div class="risk-header">
+      <span id="risk-icon" class="risk-icon"></span>
+      <h2 id="risk-level" class="risk-title"></h2>
+    </div>
+
+    <p id="risk-summary" class="risk-summary"></p>
+
+    <div class="risk-bar-wrap">
+      <div id="risk-bar" class="risk-bar"></div>
+    </div>
+
+    <div class="result-grid">
+
+      <div class="result-card">
+        <h3>🚨 Evacuation Plan</h3>
+        <ul id="evacuation"></ul>
+      </div>
+
+      <div class="result-card">
+        <h3>🏥 Nearby Resources</h3>
+        <ul id="resources"></ul>
+      </div>
+
+    </div>
+
+    <div class="result-card alert-box">
+      <h3>📢 Emergency Alerts</h3>
+      <p id="alert-en"></p>
+      <p id="alert-hi"></p>
+    </div>
+
   </div>
 
   <!-- FOOTER -->
